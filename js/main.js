@@ -30,7 +30,7 @@ function sendEmail() {
 
 function sendEmailGmail(email, name, subject, message) {
   $('.loading').show();
-  var url = 'email';
+  var url = 'https://samukdev.herokuapp.com/email';
   $.post( url, {
     "email":  email,
     "subject": subject,
