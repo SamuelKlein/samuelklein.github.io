@@ -1,372 +1,284 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Samuk@dev:~</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="//code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
-    <link href="//unpkg.com/progressive-image/dist/index.css" rel="stylesheet" type="text/css">
-    <link rel='stylesheet' type='text/css' media='screen'
-        href='//cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-
-    <script src="//unpkg.com/progressive-image/dist/index.js"></script>
-    <script src='js/main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samuel Klein | Portfolio</title>
+    <meta name="description" content="Portfolio of Samuel A. Klein - Senior Software Developer focused on Java and Web Systems.">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">SK</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li> -->
-                </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="logo" href="#about">SK</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#work" data-i18n="nav.work">Work</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">Dark</button>
+                <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">PT</button>
+            </nav>
+        </div>
     </header>
-    <main role="main" class="bg-light">
-        <div id="about"></div>
-        <div class="container">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading"><span>Samuel A Klein</span></h2>
-                    <p class="lead">
-                    <ul class="list-unstyled">
-                        <li class="media my-4">
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Software Developer</h5>
-                                <h6>Proactive, responsible Java developer focused on Web Systems.</h6>
-                                <h6>Known to possess strong technical knowledge and to deliver solid systems.</h6>
-                                <h6>More than 15 years’ experience developing highly critical systems.</h6>
-                            </div>
-                        </li>
-                    </ul>
-                    </p>
+
+    <main>
+        <section id="about" class="hero section">
+            <div class="container">
+                <p class="eyebrow" data-i18n="hero.role">Software Developer</p>
+                <h1>Samuel A. Klein</h1>
+                <p class="hero-text" data-i18n="hero.text">
+                    Proactive and responsible Java developer focused on web systems. More than 15 years of experience building highly critical products with strong technical quality.
+                </p>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="container">
+                <h2 data-i18n="work.title">Work Experience</h2>
+                <ol class="timeline">
+                    <li>
+                        <span class="year">2024</span>
+                        <div class="timeline-content">
+                            <h3>ADP Labs</h3>
+                            <p data-i18n="work.adp">Working from 2024 to present, focused on Spring Boot applications.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2021</span>
+                        <div class="timeline-content">
+                            <h3>Dell</h3>
+                            <p data-i18n="work.dell">Worked from 2021 to 2024 as a Java 17 developer (Spring Boot 3.x), guiding junior and mid-level developers and analyzing new features.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2020</span>
+                        <div class="timeline-content">
+                            <h3>Qintess (Outsourcing for Dell)</h3>
+                            <p data-i18n="work.qintess">Worked from 2020 to 2021 as a Java 11 developer using Spring Boot WebFlux.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <div class="timeline-content">
+                            <h3>TOTVS - Financial Service</h3>
+                            <p data-i18n="work.totvs">Worked from 2019 to 2020 with Java in credit card management systems.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2013</span>
+                        <div class="timeline-content">
+                            <h3>PROCERGS</h3>
+                            <p data-i18n="work.procergs">Worked from 2013 to 2019 with Java development and Ionic mobile applications.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2008</span>
+                        <div class="timeline-content">
+                            <h3>Unimed Vale do Cai</h3>
+                            <p data-i18n="work.unimed">Worked from 2008 to 2013 with health plan management systems.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="year">2006</span>
+                        <div class="timeline-content">
+                            <h3>Feevale University</h3>
+                            <p data-i18n="work.feevale">Computer Science studies from 2006 to 2014, building a strong software development foundation.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 data-i18n="skills.title">Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <img src="svg/java.svg" alt="Java logo">
+                        <h3>Java</h3>
+                        <p data-i18n="skills.java.versions">Versions: 7, 8, 11, 17</p>
+                        <p data-i18n="skills.java.exp">~15 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/springboot.svg" alt="Spring Boot logo">
+                        <h3>Spring Boot</h3>
+                        <p data-i18n="skills.spring.version">Version: 3.x</p>
+                        <p data-i18n="skills.spring.exp">~4 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/angular.svg" alt="Angular logo">
+                        <h3>Angular</h3>
+                        <p data-i18n="skills.angular.version">Version: 2+</p>
+                        <p data-i18n="skills.angular.exp">~7 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/nodejs.svg" alt="Node.js logo">
+                        <h3>Node.js</h3>
+                        <p data-i18n="skills.node.versions">Versions: 0.12.x, 8.x, 10.x</p>
+                        <p data-i18n="skills.node.exp">~8 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/oracle.svg" alt="Oracle logo">
+                        <h3 data-i18n="skills.oracle.title">Oracle Database SQL</h3>
+                        <p data-i18n="skills.oracle.versions">Versions: 11g, 12c</p>
+                        <p data-i18n="skills.oracle.exp">~10 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/postgresql.svg" alt="PostgreSQL logo">
+                        <h3>PostgreSQL</h3>
+                        <p data-i18n="skills.postgres.exp">~12 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/mongodb.svg" alt="MongoDB logo">
+                        <h3>MongoDB</h3>
+                        <p data-i18n="skills.mongo.exp">~5 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/rabbitmq.svg" alt="RabbitMQ logo">
+                        <h3>RabbitMQ</h3>
+                        <p data-i18n="skills.rabbit.exp">~4 years experience</p>
+                    </article>
+                    <article class="skill-card">
+                        <img src="svg/kafka.svg" alt="Apache Kafka logo">
+                        <h3>Apache Kafka</h3>
+                        <p data-i18n="skills.kafka.exp">~6 years experience</p>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div id="work"></div>
-        <div class="container">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h5 class="mt-0 mb-8"></h5>
-                    <h2 class="mt-0 mb-1"><span>Work Experience</span></h2>
-                    <p class="lead">
-                    <ul class="list-unstyled">
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2020">
-                                <title>2024</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2024</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">ADP Labs</h5>
-                                I work for ADP Labs from 2024 to current, I work with SpringBoot
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2020">
-                                <title>2021</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2021</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Dell</h5>
-                                I worked for Dell from 2021 to 2024, I worked with java developer 17 (SpringBoot 3.x),
-                                responsible for guiding junior and mid-level developers and analyzing new features
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2020">
-                                <title>2020</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2020</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Qintess - Outsourcing</h5>
-                                I worked for Dell with Contract from 2020 to 2021, I worked with java developer 11 with
-                                SpringBoot WebFlux
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2019">
-                                <title>2019</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2019</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">TOTVS - Financial Service</h5>
-                                I work in TOTVS from 2019 to 2020, I worked with java developer with credit card
-                                management systems
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2013">
-                                <title>2013</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2013</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Procergs</h5>
-                                I worked in PROCERGS from 2013 to 2019, I worked with java developer and mobile
-                                applications in ionic
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2008">
-                                <title>2008</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2008</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Unimed Vale do Caí</h5>
-                                I worked in Unimed Vale do Caí from 2008 to 2013, I worked with java developer with
-                                health plan management systems
-                            </div>
-                        </li>
-                        <li class="media">
-                            <svg class="bd-placeholder-img mr-3" width="64" height="64"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                focusable="false" role="img" aria-label="Placeholder: 2008">
-                                <title>2006</title>
-                                <circle cx="32" cy="32" r="30" width="100%" height="100%" fill="#5a5a5a">
-                                </circle>
-                                <text x="50%" y="50%" fill="#dee2e6" dy=".3em" dx="-1.1em">2006</text>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">Feevale</h5>
-                                I studied in Universy Feevale from 2006 to 2014, my studies by enrolling Computer
-                                Science, I learned the programming knowledge base in this period
-                            </div>
-                        </li>
-                    </ul>
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="skills"></div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class=" row">
-                <div class="col-md-12 align-items-center">
-                    <h1>Skills</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="java" class="bd-placeholder-img card-img-top" src="svg/java.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">Java</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">Version: 7 8 11 17</small>
-                                <small class="text-muted">~15 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="springboot" class="bd-placeholder-img card-img-top" src="svg/springboot.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">Springboot</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">Version: 3.x</small>
-                                <small class="text-muted">~4 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="angular" class="bd-placeholder-img card-img-top" src="svg/angular.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">Angular</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">Version: 2+</small>
-                                <small class="text-muted">~7 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="nodejs" class="bd-placeholder-img card-img-top" src="svg/nodejs.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">NodeJS</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">Version: 0.12.x 8.x 10.x</small>
-                                <small class="text-muted">~8 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="oracle" class="bd-placeholder-img card-img-top" src="svg/oracle.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">Oracle Database SQL</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">Version: 11g 12c</small>
-                                <small class="text-muted">~10 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="postgresql" class="bd-placeholder-img card-img-top" src="svg/postgresql.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">PostgreSQL</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">~12 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="mongodb" class="bd-placeholder-img card-img-top" src="svg/mongodb.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">MongoDB</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">~5 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="rabbitmq" class="bd-placeholder-img card-img-top" src="svg/rabbitmq.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">RabbitMQ</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">~4 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img style="padding: 10px" alt="kafka" class="bd-placeholder-img card-img-top" src="svg/kafka.svg"
-                            width="100%" height="225">
-                        <div class="card-body">
-                            <p class="card-text">Apache Kafka</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">~6 Years Experience</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class=" row">
-                <div class="col-md-12 align-items-center">
-                    <h1 id="projects"></h1>
-                </div>
-            </div>
-
-        </div>
+        </section>
     </main>
 
-    <div id="contact"></div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <footer class="container">
-        <div class="row justify-content-md-center">
-            <div class="align-items-center">
-                <h1>Contact</h1>
-            </div>
-        </div>
+    <footer id="contact" class="section footer">
         <div class="container">
-        <div class="row justify-content-md-center">
-        
-                <a href="mailto:samukklein+dev@gmail.com" class="col-md-1" target="_blank" rel="noopener noreferrer">
-                    <img style="padding: 10px" alt="e-mail" class="bd-placeholder-img card-img-top" src="svg/mail.svg">
+            <h2 data-i18n="contact.title">Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:samukklein+dev@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send email">
+                    <img src="svg/mail.svg" alt="E-mail">
                 </a>
-                <a href="https://www.linkedin.com/in/samuel-a-klein-95b37429"  class="col-md-1" target="_blank"
-                    rel="noopener noreferrer">
-                    <img style="padding: 10px" alt="linkedin" class="bd-placeholder-img card-img-top" src="svg/linkedin.svg">
+                <a href="https://www.linkedin.com/in/samuel-a-klein-95b37429" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <img src="svg/linkedin.svg" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/SamuelKlein"  class="col-md-1" target="_blank" rel="noopener noreferrer">
-                    <img style="padding: 10px" alt="github" class="bd-placeholder-img card-img-top" src="svg/github.svg">
+                <a href="https://github.com/SamuelKlein" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <img src="svg/github.svg" alt="GitHub">
                 </a>
+            </div>
+            <p class="footer-note" data-i18n="footer.note">Website crafted by Samuel Antonio Klein.</p>
         </div>
-        </div>
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>Website crafted by Samuel Antonio Klein.</p>
     </footer>
-</body>
+    <script>
+        (function () {
+            const toggle = document.getElementById("lang-toggle");
+            const themeToggle = document.getElementById("theme-toggle");
+            const dictionary = {
+                en: {
+                    "nav.about": "About",
+                    "nav.work": "Work",
+                    "nav.skills": "Skills",
+                    "nav.contact": "Contact",
+                    "hero.role": "Software Developer",
+                    "hero.text": "Proactive and responsible Java developer focused on web systems. More than 15 years of experience building highly critical products with strong technical quality.",
+                    "work.title": "Work Experience",
+                    "work.adp": "Working from 2024 to present, focused on Spring Boot applications.",
+                    "work.dell": "Worked from 2021 to 2024 as a Java 17 developer (Spring Boot 3.x), guiding junior and mid-level developers and analyzing new features.",
+                    "work.qintess": "Worked from 2020 to 2021 as a Java 11 developer using Spring Boot WebFlux.",
+                    "work.totvs": "Worked from 2019 to 2020 with Java in credit card management systems.",
+                    "work.procergs": "Worked from 2013 to 2019 with Java development and Ionic mobile applications.",
+                    "work.unimed": "Worked from 2008 to 2013 with health plan management systems.",
+                    "work.feevale": "Computer Science studies from 2006 to 2014, building a strong software development foundation.",
+                    "skills.title": "Skills",
+                    "skills.java.versions": "Versions: 7, 8, 11, 17",
+                    "skills.java.exp": "~15 years experience",
+                    "skills.spring.version": "Version: 3.x",
+                    "skills.spring.exp": "~4 years experience",
+                    "skills.angular.version": "Version: 2+",
+                    "skills.angular.exp": "~7 years experience",
+                    "skills.node.versions": "Versions: 0.12.x, 8.x, 10.x",
+                    "skills.node.exp": "~8 years experience",
+                    "skills.oracle.title": "Oracle Database SQL",
+                    "skills.oracle.versions": "Versions: 11g, 12c",
+                    "skills.oracle.exp": "~10 years experience",
+                    "skills.postgres.exp": "~12 years experience",
+                    "skills.mongo.exp": "~5 years experience",
+                    "skills.rabbit.exp": "~4 years experience",
+                    "skills.kafka.exp": "~6 years experience",
+                    "contact.title": "Contact",
+                    "footer.note": "Website crafted by Samuel Antonio Klein."
+                },
+                pt: {
+                    "nav.about": "Sobre",
+                    "nav.work": "Experiencia",
+                    "nav.skills": "Skills",
+                    "nav.contact": "Contato",
+                    "hero.role": "Desenvolvedor de Software",
+                    "hero.text": "Desenvolvedor Java proativo e responsavel, focado em sistemas web. Mais de 15 anos de experiencia construindo produtos criticos com alta qualidade tecnica.",
+                    "work.title": "Experiencia Profissional",
+                    "work.adp": "Atuando de 2024 ate o momento, com foco em aplicacoes Spring Boot.",
+                    "work.dell": "Atuei de 2021 a 2024 como desenvolvedor Java 17 (Spring Boot 3.x), apoiando desenvolvedores junior e pleno e analisando novas funcionalidades.",
+                    "work.qintess": "Atuei de 2020 a 2021 como desenvolvedor Java 11 com Spring Boot WebFlux.",
+                    "work.totvs": "Atuei de 2019 a 2020 com Java em sistemas de gestao de cartoes de credito.",
+                    "work.procergs": "Atuei de 2013 a 2019 com desenvolvimento Java e aplicativos mobile em Ionic.",
+                    "work.unimed": "Atuei de 2008 a 2013 com sistemas de gestao de planos de saude.",
+                    "work.feevale": "Graduacao em Ciencia da Computacao de 2006 a 2014, construindo base solida em desenvolvimento de software.",
+                    "skills.title": "Skills",
+                    "skills.java.versions": "Versoes: 7, 8, 11, 17",
+                    "skills.java.exp": "~15 anos de experiencia",
+                    "skills.spring.version": "Versao: 3.x",
+                    "skills.spring.exp": "~4 anos de experiencia",
+                    "skills.angular.version": "Versao: 2+",
+                    "skills.angular.exp": "~7 anos de experiencia",
+                    "skills.node.versions": "Versoes: 0.12.x, 8.x, 10.x",
+                    "skills.node.exp": "~8 anos de experiencia",
+                    "skills.oracle.title": "Oracle Database SQL",
+                    "skills.oracle.versions": "Versoes: 11g, 12c",
+                    "skills.oracle.exp": "~10 anos de experiencia",
+                    "skills.postgres.exp": "~12 anos de experiencia",
+                    "skills.mongo.exp": "~5 anos de experiencia",
+                    "skills.rabbit.exp": "~4 anos de experiencia",
+                    "skills.kafka.exp": "~6 anos de experiencia",
+                    "contact.title": "Contato",
+                    "footer.note": "Site desenvolvido por Samuel Antonio Klein."
+                }
+            };
 
+            const applyLanguage = function (lang) {
+                const active = dictionary[lang] ? lang : "en";
+                document.documentElement.lang = active;
+                document.querySelectorAll("[data-i18n]").forEach(function (node) {
+                    const key = node.getAttribute("data-i18n");
+                    if (dictionary[active][key]) {
+                        node.textContent = dictionary[active][key];
+                    }
+                });
+                toggle.textContent = active === "en" ? "PT" : "EN";
+                localStorage.setItem("portfolio-lang", active);
+            };
+
+            const savedLanguage = localStorage.getItem("portfolio-lang") || "en";
+            applyLanguage(savedLanguage);
+
+            toggle.addEventListener("click", function () {
+                const nextLanguage = document.documentElement.lang === "en" ? "pt" : "en";
+                applyLanguage(nextLanguage);
+            });
+
+            const applyTheme = function (theme) {
+                const active = theme === "dark" ? "dark" : "light";
+                document.documentElement.setAttribute("data-theme", active);
+                themeToggle.textContent = active === "dark" ? "Light" : "Dark";
+                localStorage.setItem("portfolio-theme", active);
+            };
+
+            const savedTheme = localStorage.getItem("portfolio-theme");
+            const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            applyTheme(savedTheme || (systemDark ? "dark" : "light"));
+
+            themeToggle.addEventListener("click", function () {
+                const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+                applyTheme(nextTheme);
+            });
+        }());
+    </script>
+</body>
 </html>
